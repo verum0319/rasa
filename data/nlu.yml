@@ -1,0 +1,58 @@
+version: "3.1"
+
+nlu:
+- intent: book_appointment
+  examples: |
+    - I want to book an appointment with Dr. Smith on [March 10th](date) at [2 PM](time).
+    - Can I see a [cardiologist](doctor) on [Monday](date) morning?
+    - Schedule an appointment with a [dermatologist](doctor) next [Friday](date).
+    - I need an appointment for a check-up [tomorrow](date).
+    - Can I get a slot with Dr. [Brown](doctor) for [back pain](symptom)?
+
+- intent: reschedule_appointment
+  examples: |
+    - I need to reschedule my appointment from [March 5th](date) to [March 8th](date).
+    - Can I change my doctor’s appointment to [next week](date)?
+    - Move my appointment to a later date.
+    - Is it possible to reschedule my visit with Dr. [Patel](doctor)?
+    - I want to change my appointment time from [10 AM](time) to [3 PM](time).
+
+- intent: cancel_appointment
+  examples: |
+    - I need to cancel my appointment for [March 12th](date).
+    - Can you please cancel my visit to Dr. [Watson](doctor)?
+    - I won’t be able to make my appointment [tomorrow](date), cancel it.
+    - Cancel my appointment ID [12345](appointment_id).
+    - I’d like to cancel my scheduled consultation.
+
+- intent: check_availability
+  examples: |
+    - Is Dr. [Lee](doctor) available [next Tuesday](date)?
+    - When can I see a [neurologist](doctor)?
+    - What are the available slots for an [eye check-up](symptom)?
+    - Is there any appointment open for [this weekend](date)?
+    - Can I book a same-day appointment with a [dentist](doctor)?
+
+- intent: greet
+  examples: |
+    - Hi!
+    - Hello!
+    - Good morning.
+    - Hey there.
+    - Hi, how are you?
+
+- intent: goodbye
+  examples: |
+    - Bye!
+    - See you later.
+    - Thanks, goodbye!
+    - Have a nice day!
+    - Catch you later.
+
+- intent: out_of_scope
+  examples: |
+    - Tell me a joke.
+    - What’s the weather like?
+    - How do I bake a cake?
+    - Can you recommend a good movie?
+    - What is the capital of France?
