@@ -1,0 +1,33 @@
+version: "3.1"
+
+stories:
+- story: book an appointment
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: book_appointment
+    - action: utter_confirm_appointment
+
+- story: reschedule an appointment
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: reschedule_appointment
+    - action: utter_confirm_reschedule
+
+- story: cancel an appointment
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: cancel_appointment
+    - action: utter_confirm_cancellation
+
+- story: check doctor availability
+  steps:
+    - intent: check_availability
+    - action: utter_check_availability
+
+- story: user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
