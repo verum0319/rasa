@@ -1,0 +1,30 @@
+version: "3.1"
+
+intents:
+  - book_appointment
+  - reschedule_appointment
+  - cancel_appointment
+  - check_availability
+  - greet
+  - goodbye
+  - out_of_scope
+
+entities:
+  - doctor
+  - date
+  - time
+  - patient_name
+  - appointment_id
+  - symptom
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you with your appointment today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+  utter_out_of_scope:
+    - text: "I'm sorry, but I can only help with appointment-related queries."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
